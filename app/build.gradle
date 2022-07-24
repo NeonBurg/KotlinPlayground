@@ -23,8 +23,9 @@ apply plugin: "androidx.navigation.safeargs"
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.example.android.guesstheword"
-        minSdkVersion 19
+        applicationId "com.example.android.guesstheword2"
+        multiDexEnabled true
+        minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -56,4 +57,5 @@ dependencies {
     // Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:2.3.0"
     implementation "androidx.navigation:navigation-ui-ktx:2.3.0"
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 }
