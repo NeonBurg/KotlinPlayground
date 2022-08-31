@@ -20,6 +20,7 @@ class ScoreViewModel(finalScore: Int) : ViewModel() {
 
     init {
         Log.i(TAG, "Final score is $finalScore")
+        _score.value = finalScore
     }
 
     fun onPlayAgain() {
